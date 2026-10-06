@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Scripture-centered financial stewardship partnerships for churches and believers." />
+    <title>Church Partnerships | Purposeful Paths Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <style>
+      :root { --ink:#1f302b; --forest:#2e5041; --moss:#6f8567; --gold:#b69655; --sand:#f6f3ed; --paper:#fffdfa; --line:#dedbd2; --muted:#60706a; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; color:var(--ink); background:var(--paper); font-family:"DM Sans", Arial, sans-serif; font-size:16px; line-height:1.6; }
+      a { color:inherit; }
+      .wrap { width:min(1120px, calc(100% - 44px)); margin:auto; }
+      .eyebrow { color:var(--gold); font-size:.72rem; font-weight:700; letter-spacing:.17em; text-transform:uppercase; }
+      header { border-bottom:1px solid rgba(255,255,255,.17); color:white; position:absolute; width:100%; z-index:2; }
+      .nav { height:76px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+      .brand { text-decoration:none; font-weight:700; font-size:.92rem; letter-spacing:.04em; text-transform:uppercase; line-height:1.15; }
+      .brand span { display:block; color:#e8d9b8; font-size:.62rem; letter-spacing:.16em; margin-top:3px; }
+      .nav a:not(.brand) { font-size:.84rem; letter-spacing:.05em; text-decoration:none; text-transform:uppercase; }
+      .hero { background:linear-gradient(115deg,rgba(15,39,32,.96),rgba(38,74,59,.91)), radial-gradient(circle at 83% 15%,rgba(203,173,106,.35),transparent 23%), #244638; color:white; min-height:670px; display:grid; align-items:center; overflow:hidden; position:relative; }
+      .hero:after { content:""; position:absolute; width:560px; height:560px; border:1px solid rgba(232,217,184,.28); border-radius:50%; right:-250px; bottom:-300px; box-shadow:0 0 0 50px rgba(232,217,184,.045),0 0 0 105px rgba(232,217,184,.04); }
+      .hero-copy { position:relative; z-index:1; padding:145px 0 90px; max-width:720px; }
+      h1,h2,h3,p { margin-top:0; }
+      h1 { font-family:"Libre Baskerville", Georgia, serif; font-size:clamp(2.6rem,6vw,5.45rem); line-height:1.08; letter-spacing:-.045em; margin:18px 0 24px; }
+      h1 em { color:#ead8aa; font-weight:400; }
+      .hero p { font-size:1.1rem; color:#e5ece7; max-width:590px; }
+      .buttons { display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; }
+      .button { display:inline-block; padding:13px 21px; text-decoration:none; font-size:.77rem; font-weight:700; letter-spacing:.11em; text-transform:uppercase; transition:.2s ease; }
+      .primary { background:#dfc384; color:#1f302b; } .primary:hover { background:#f2dfad; }
+      .secondary { border:1px solid rgba(255,255,255,.6); color:white; } .secondary:hover { background:white; color:var(--ink); }
+      section { padding:96px 0; } .intro { text-align:center; max-width:820px; margin:auto; }
+      h2 { font-family:"Libre Baskerville", Georgia, serif; font-size:clamp(2rem,4vw,3.3rem); letter-spacing:-.04em; line-height:1.2; margin:14px 0 22px; }
+      .intro p { color:var(--muted); font-size:1.08rem; }
+      .pillars { background:var(--sand); }
+      .pillar-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:48px; }
+      .pillar { background:var(--paper); border-top:4px solid var(--gold); padding:30px; }
+      .number { color:var(--moss); font-size:.76rem; font-weight:700; letter-spacing:.16em; }
+      .pillar h3 { font-family:"Libre Baskerville", Georgia, serif; font-size:1.24rem; line-height:1.38; margin:14px 0 10px; }
+      .scripture { color:var(--forest); font-style:italic; font-family:"Libre Baskerville", Georgia, serif; font-size:.88rem; }
+      .pillar p { color:var(--muted); font-size:.95rem; margin:16px 0 0; }
+      .services { background:#fff; }
+      .service-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; border:1px solid var(--line); background:var(--line); margin-top:48px; }
+      .service { background:var(--paper); padding:34px 34px 30px; min-height:245px; }
+      .service h3 { font-family:"Libre Baskerville", Georgia, serif; font-size:1.35rem; line-height:1.28; margin:13px 0; }
+      .service p { color:var(--muted); font-size:.95rem; }
+      .service .eyebrow { color:var(--moss); }
+      .access { color:white; background:var(--forest); position:relative; overflow:hidden; }
+      .access:before { content:"PS"; position:absolute; right:4%; top:-55px; font:700 230px/.8 "Libre Baskerville", Georgia, serif; color:rgba(255,255,255,.035); }
+      .access-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:70px; position:relative; z-index:1; align-items:center; }
+      .access h2 { color:#fff; } .access p { color:#deebe3; font-size:1.05rem; }
+      .access-card { background:#fffdfa; color:var(--ink); padding:32px; border-left:4px solid var(--gold); }
+      .access-card h3 { font-family:"Libre Baskerville", Georgia, serif; margin:0 0 12px; font-size:1.3rem; }
+      .access-card p { color:var(--muted); font-size:.94rem; margin:0; }
+      .pathway { display:grid; grid-template-columns:.8fr 1.2fr; gap:85px; align-items:start; }
+      .pathway p { color:var(--muted); }
+      .steps { list-style:none; padding:0; margin:0; border-top:1px solid var(--line); }
+      .steps li { display:grid; grid-template-columns:52px 1fr; gap:20px; padding:21px 0; border-bottom:1px solid var(--line); }
+      .steps b { color:var(--gold); font:700 1.35rem "Libre Baskerville", Georgia, serif; }
+      .steps strong { display:block; font-size:1rem; margin-bottom:2px; } .steps span { color:var(--muted); font-size:.91rem; }
+      .cta { background:var(--sand); text-align:center; }
+      .cta p { max-width:630px; margin:0 auto; color:var(--muted); }
+      footer { background:#1d332b; color:#e5ece7; padding:38px 0; }
+      footer .wrap { display:flex; align-items:center; justify-content:space-between; gap:20px; } footer p { margin:0; font-size:.83rem; } footer a { color:#ead8aa; }
+      @media (max-width:760px) { .nav a:not(.brand) { display:none; } .hero { min-height:620px; } section { padding:68px 0; } .pillar-grid,.access-grid,.pathway { grid-template-columns:1fr; gap:30px; } .service-grid { grid-template-columns:1fr; } .hero-copy { padding-top:125px; } footer .wrap { align-items:flex-start; flex-direction:column; } }
+    </style>
+  </head>
+  <body>
+    <header><div class="wrap nav"><a class="brand" href="#top">Purposeful Paths<span>Financial stewardship</span></a><a href="#partnerships">Partnership offerings</a></div></header>
+    <main id="top">
+      <section class="hero"><div class="wrap hero-copy"><div class="eyebrow">Church Partnerships</div><h1>Your financial path,<br><em>on purpose.</em></h1><p>Scripture-centered financial stewardship for churches and believers seeking greater clarity, confidence, and joyful generosity.</p><div class="buttons"><a class="button primary" href="#connect">Start a partnership conversation</a><a class="button secondary" href="#pillars">Explore the framework</a></div></div></section>
+      <section><div class="wrap intro"><div class="eyebrow">Faith that reaches financial life</div><h2>Practical discipleship for how we earn, spend, save, give, and lead.</h2><p>Purposeful Paths Solutions equips congregations with biblical teaching, useful financial tools, guided reflection, and confidential coaching. Together, these resources help people move from information to faithful action in everyday financial life.</p></div></section>
+      <section class="pillars" id="pillars"><div class="wrap"><div class="intro"><div class="eyebrow">Our shared foundation</div><h2>The Three-Pillar Stewardship Framework</h2></div><div class="pillar-grid"><article class="pillar"><div class="number">PILLAR 01</div><h3>God owns it all.</h3><div class="scripture">“The earth is the Lord’s, and everything in it.” — Psalm 24:1</div><p>Stewardship begins with surrender. Income, possessions, opportunities, time, and talents are all received from God and managed for His purposes.</p></article><article class="pillar"><div class="number">PILLAR 02</div><h3>We are called to manage and grow what we have.</h3><div class="scripture">Luke 19:11–27</div><p>Faithful stewardship calls for intentional management, wise planning, productive use of resources, and accountability for what God has entrusted.</p></article><article class="pillar"><div class="number">PILLAR 03</div><h3>God calls us to faithful and cheerful generosity.</h3><div class="scripture">Malachi 3:10; 2 Corinthians 9:7</div><p>Giving is worship—not simply an obligation. It helps us participate in God’s provision and cultivate a life shaped by joyful generosity.</p></article></div></div></section>
+      <section class="services" id="partnerships"><div class="wrap"><div class="intro"><div class="eyebrow">Built around your congregation</div><h2>Partnership offerings</h2><p>Begin with one focused experience or build a fuller discipleship pathway. Every engagement is tailored to your church’s people, rhythm, and ministry goals.</p></div><div class="service-grid"><article class="service"><div class="eyebrow">Teach</div><h3>Seminars & Signature Workshops</h3><p>Focused 60–75 minute sessions, two-hour intensives, and multi-part workshops that blend biblical teaching, practical exercises, discussion, and prayer.</p></article><article class="service"><div class="eyebrow">Practice</div><h3>Small Group Stewardship Series</h3><p>Progressive, cohort-style gatherings that help participants build sustainable habits around spending, saving, debt, credit, planning, and generosity.</p></article><article class="service"><div class="eyebrow">Support</div><h3>Church-Sponsored Coaching</h3><p>Confidential one-on-one coaching for members who need individualized support with their financial snapshot, systems, goals, and next steps.</p></article><article class="service"><div class="eyebrow">Lead</div><h3>Leadership, Board & Fund Training</h3><p>Guidance for pastors, boards, finance teams, and ministry leaders on stewardship culture, benevolence practices, generosity funds, and wise oversight.</p></article></div></div></section>
+      <section class="access"><div class="wrap access-grid"><div><div class="eyebrow">Accessible care</div><h2>Support should be within reach.</h2><p>Financial pressure should not prevent a willing participant from receiving practical, compassionate help. Churches may sponsor a pool of coaching sessions, offer partial scholarships, or use a shared-cost model that preserves commitment while lowering barriers.</p></div><aside class="access-card"><h3>Church referral & need-based access</h3><p>Participants referred through their church program—or those who demonstrate financial need—may be eligible for discounted coaching products, partial scholarships, or church-sponsored support.</p></aside></div></section>
+      <section><div class="wrap pathway"><div><div class="eyebrow">A practical path forward</div><h2>One partnership. A lasting ministry rhythm.</h2><p>Churches can enter at the point that best serves their people and grow from there. Purposeful Paths works with your ministry team to shape the right audience, sequence, and level of support.</p></div><ol class="steps"><li><b>01</b><div><strong>Gather through a seminar or intensive</strong><span>Introduce a shared biblical language for stewardship and identify next steps.</span></div></li><li><b>02</b><div><strong>Grow through a small-group series</strong><span>Turn conviction into habits through teaching, practice, prayer, and accountability.</span></div></li><li><b>03</b><div><strong>Support through confidential coaching</strong><span>Offer deeper, personalized guidance for members facing complex decisions or hardship.</span></div></li><li><b>04</b><div><strong>Strengthen systems and leadership</strong><span>Build durable approaches to generosity, benevolence, and financial discipleship.</span></div></li></ol></div></section>
+      <section class="cta" id="connect"><div class="wrap"><div class="eyebrow">Let’s build your pathway</div><h2>Equip your congregation for faithful stewardship.</h2><p>Let’s discuss your church’s goals, your congregation, and the partnership format that will best serve your people.</p><div class="buttons" style="justify-content:center"><a class="button primary" href="https://www.purposefulpathssolutions.com/#contact">Request a conversation</a></div></div></section>
+    </main>
+    <footer><div class="wrap"><p><strong>Purposeful Paths Solutions</strong><br>Walking toward a better financial future starts by laying your path.</p><p><a href="https://www.purposefulpathssolutions.com/">purposefulpathssolutions.com</a></p></div></footer>
+  </body>
+</html>
